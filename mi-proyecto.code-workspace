@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "mi-proyecto",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
