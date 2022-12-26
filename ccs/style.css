@@ -5,45 +5,46 @@
 }
 
 header {
-    width: 100%;
     display: flex;
-    background-color:goldenrod;
-justify-content: space-between;
+    width: 100%;
+    background-color:rgb(231, 185, 69);
+    justify-content: space-between;
 }
-.titulo img {
-    width: 60px;
+.navBar {
+    display:flex;
+    flex-flow: row wrap;
+    gap: 30px;
+    padding-top: 20px;
+    justify-content:space-evenly;
+    list-style: none;
+    align-items: center;
+    margin-top: 20;
+}
+.navBar li {
+    list-style: none;
+}
+.navBar li a{
+    text-decoration: none;
+    font: size 20px ;
+    color: black;
+}
+.navBar li a:hover{
+    color: crimson;
+}
+nav{
+    height:90%;
 }
 a {
     color:black;
     text-decoration: none;
-}
-li {
-    list-style: none;
-
-}
+ }
 .titulo {
     display:flex;
     justify-content: center;
     align-items: center; 
 }
-.navBar {
-    display:flex;
-    gap: 20px;
-    padding-top: 20px;
-    justify-content:center;
-    list-style: none;
-    align-items: center;
-    height: 50%;
-    margin-top: 20;
-}
-navBar li a{
-    text-decoration: none;
-    font-size:15px ;
-    color: white;
-    
-}
-nav{
-    height:auto;
+.titulo img {
+    width: 60px;
 }
 body{
     background-color:rgba(255, 217, 0, 0.781);
@@ -59,7 +60,7 @@ a:link {
     text-align: center;
     text-shadow: 2px 2px 5px black;
     color:black;
-    font-weight:400px;
+    font: weight 300px;
     font-size: 30;
     font-family: sans-serif;
 }
@@ -88,7 +89,7 @@ a:link {
 .imagen img{
     margin-top: 10px;
     margin-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 20px;;
 }
 .menu h2{
     color:black;
