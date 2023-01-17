@@ -111,13 +111,9 @@ font-size: 20px;
 font-family:'Roboto', sans-serif;
 color:white;
 }
-.item3 {
-    width: 100%;
-    height: 100%;
-}
 main{
     width:100%;
-    height: 100%;
+    height:100%;
 }
 /* comence a darle estilo a el footer */
  .datos{
@@ -147,100 +143,136 @@ main{
     margin-right: 10px;
     background-color: aquamarine;
 }
-/* comence a darle estetica con css al header  de inicio*/
+/* comence a darle estilos con css al header  de inicio*/
+
 header{
     width: 100%;
-    display:flex;
-    justify-content:space-between;
     background-color: aquamarine;
 }
-.logo.img{
-    color:white;
-    width: 50px;
-}
-a {
-    color:white;
-}
 .nav{
-    width: 90%;
+  width: 90%;
 }
 .navbar{
-    width: 100%;
-    display: flex;
-    justify-content:end;
+    display:flex;
+    justify-content: flex-end;
     gap: 20px;
     list-style: none;
-}
-li{
-    list-style: none;
-} 
-.item h2{
-    font-family:'Roboto', sans-serif; 
-}
-comence adarle estilos a inicio
-header{
-    width: 100%;
-    display: flex;
-    justify-content:space-between;
-}
-.nav{
-    width: 90%;
-}
-.navbar{
-    width: 100%;
-    display: flex;
-    justify-content: end;
-    gap: 20px;
-    list-style: none;
+    margin-right: 30px;
 }
 .navbar li a{
     text-decoration: none;
     color: white;
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
 }
-.navbar li a:hover{
-    color: red;
+.logo.img{
+    background-color: aquamarine;
+    color:white;
+    width: 50px;}
+main{
+    width: 100%;
 }
-a{
-    color: white;
-}
-li{
-   list-style: none;
-} 
-/* .grid{
+.grid{
     display:grid;
     width: 100%;
     height: 200%;
-grid-template-columns: repeat(5, 1fr);
+grid-template-columns: repeat(4, 1fr);
 grid-template-rows: repeat(6, 1fr);
 grid-template-areas:
-        "titulo titulo titulo imagen imagen imagen"
-        "parrafo parrafo parrafo imagen imagen imagen"
-        "parrafo parrafo parrafo imagen imagen imagen"
-        "parrafo parrafo parrafo imagen2 imagen2 imagen2"
-        "parrafo parrafo parrafo imagen2 imagen2 imagen2"
-        "parrafo parrafo parrafo imagen2 imagen2 imagen2"
+        "titulo titulo titulo imagen"
+        "parrafo parrafo parrafo imagen"
+        "parrafo parrafo parrafo imagen"
+        "parrafo parrafo parrafo imagen2"
+        "parrafo parrafo parrafo imagen2"
+        "parrafo parrafo parrafo imagen2"
  ;
- }  */
-/* .titulo {
+}
+.titulo {
   grid-area: titulo;
-  color:black;
-}
-.parrafo {
-    grid-area: parrafo;
-}
-.imagen {
-    grid-area: imagen;
-}
-.imagen2 {
-    grid-area: imagen2;
+  color:white;
 }
 .titulo h2{
-color:black;
+color:white;
+margin:20px;
 font-size: 30px;
-font-family: 'Roboto', sans-serif;
+font-family:'Ubuntu', sans-serif;
+}
+.imagen p{
+    grid-area: parrafo;
+    flex-direction: rigth;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif; ;
+}
+.imagen p{
+    color: white;
+}
+.imagen {
+    display: flex;
+    grid-area: imagen;
+    flex-direction: left;
+    margin-left: 10px;
+}
+.imagen2  img{
+    grid-area: imagen2;
+    display: flex;
+    flex-direction: rigth;
+    margin: 10px;
+}
+.datos{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    background-color: aquamarine; 
+} 
+.datos h2{
+    background-color:aquamarine;
+    color:white;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.datos p{
+    background-color:aquamarine;
+    color:white;
+    margin: 5px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 10px;
+    background-color: aquamarine;
+}
+/* comence a darle estilos a la pagina productos */
+header{
+    width: 100%;
+    background-color: aquamarine;}
 
- } */
+.nav{
+        width: 90%;
+}
+.navbar{
+    display:flex;
+justify-content: flex-end;
+gap: 20px;
+list-style: none;
+margin-right: 30px;
+}
 
-
+.navbar li a{
+    text-decoration: none;
+    color: white;
+}
+.logo.img{
+    background-color: aquamarine;
+    color:white;
+    width: 50px;}
+main{
+    width: 100%;
+}
+.subtitulo h2{
+ color: white;
+ font-size: 30px;
+ font-family: 'Ubuntu', sans-serif;;
+}
