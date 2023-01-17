@@ -1,32 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&family=Rubik+Distressed&family=Rubik+Microbe&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;1,300;1,400&family=Ubuntu:wght@700&family=Work+Sans:wght@200;900&display=swap');
 *{
     margin: 0;
-    padding: 0;
+     padding: 0;
     box-sizing: border-box;
 }
-body{
-    height: 1500px;
-    background-image:url(../assets/img/castillo-fenestrelle.jpg)
-
-}
 /* inicio del header */
+body{
+
+    background-image: url(../assets/img/castillo-fenestrelle.jpg);
+}
 header{
+    background-color:aquamarine;
     width: 100%;
     display: flex;
-    justify-content:space-between;
-    background-color:aquamarine;
+    justify-content:flex-end;
 }
 .nav{
     width: 90%;
 }
 .navbar{
+    background-color: aquamarine;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
-    list-style: none;
+    list-style: none; 
+    margin-right: 20px;
 }
 .navbar li a{
+    background-color: aquamarine;
     text-decoration: none;
     color:white;
     font-size: 30px;
@@ -36,47 +38,48 @@ header{
     color: red;
 }
 a{
+    background-color: aquamarine;
     color:white;
 }
 li{
-   list-style: none;
+list-style: none;
 }
+.logo.img{
+    background-color: aquamarine;
+    color:white;
+    width: 50px;
+} 
 /* fuentes letras
    font-family: 'Roboto', sans-serif;
    font-family: 'Rubik Distressed', cursive;
    font-family: 'Rubik Microbe', cursive;
    font-family: 'Source Sans Pro', sans-serif;
    font-family: 'Work Sans', sans-serif;
-   font-family: 'Ubuntu', sans-serif;
-*/
+   font-family: 'Ubuntu', sans-serif; */
 
 /* termine de derle estilo a el header */
-main{
-    width:100%;
-    height: 100%;
-}
-.logo {
-   color:white     
-}
 h1{
-    text-align: center;
-    color: white;
+    text-align:center;
+    color:white;
     font-size: 40px;
     font-family: 'Roboto', sans-serif;
+}   
+main{
+    width: 100px;
+    height: 100px;
 }
-.grid{
+.containere-grid{
     display: grid;
     width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows:repeat(6, 1fr);
+    height: 500px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:repeat(5, 1fr);
     grid-template-areas:
-    "item1 item1 item1 item2 item2"
-    "item1 item1 item1 item2 item2"
-    "item1 item1 item1 item2 item2"
-    "item1 item1 item1 item2 item2"
-    "item3 item3 item3 item3 item3"
-    "item3 item3 item3 item3 item3"
+    "item1 item1 item2 item2" 
+    "item1 item1 item2 item2"
+    "item1 item1 item2 item2"
+    "item3 item3 item3 item3"
+    "item3 item3 item3 item3"
     ;
 }
 .item1 {
@@ -84,27 +87,22 @@ h1{
 }
 .item2 {
     grid-area: item2;
-    height: 100%;
-    width:100% ;
+    height: 50%;
+    width: 50%;
 }
 .item3 {
     grid-area: item3;
 }
-.item4{
-    grid-area: item4;
-    height: 100%;
-    width: 100%;
-}
 .item1 img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+    height: 50%;
+    z-index: initial;
 }
 .item2 h2{
     text-align: justify;
     font-size: 30px;
     font-weight: 50px;
     font-family:'Roboto', sans-serif;
-    border-bottom: 30px;
     color:white;
 }
 .item2 h4{
@@ -113,40 +111,41 @@ font-size: 20px;
 font-family:'Roboto', sans-serif;
 color:white;
 }
-.item3 img{
+.item3 {
     width: 100%;
     height: 100%;
 }
+main{
+    width:100%;
+    height: 100%;
+}
 /* comence a darle estilo a el footer */
-.datos{
-    background-color:rgb(137, 225, 204);
-    width: 100%;
+ .datos{
     display: flex;
-    font-weight: 400;
-    font-size: 30px;
-    font-family:'Ubuntu', sans-serif;
-    gap:30px;
-   }
-   .datos h2{
-    background-color:rgb(137, 225, 204);
-    color:white;
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    border-top: 10px;
-}
-
-   .datos p{
-    background-color:rgb(137, 225, 204) ;
-    color:white;
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    border-top: 10px;
-}
-.redes-sociales a{
-    background-color:rgb(137, 225, 204) ;
-    display: flex;
-    justify-content:flex-end;
+    gap: 20px;
     list-style: none;
+    background-color: aquamarine; 
+} 
+.datos h2{
+    background-color:aquamarine;
+    color:white;
+    margin: 10px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.datos p{
+    background-color:aquamarine;
+    color:white;
+    margin: 5px;
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.redes-sociales{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 10px;
+    background-color: aquamarine;
 }
 /* comence a darle estetica con css al header  de inicio*/
 header{
@@ -160,7 +159,7 @@ header{
     width: 50px;
 }
 a {
-    color:black;
+    color:white;
 }
 .nav{
     width: 90%;
@@ -174,11 +173,11 @@ a {
 }
 li{
     list-style: none;
-}
+} 
 .item h2{
-font-family:'Roboto', sans-serif; ;
+    font-family:'Roboto', sans-serif; 
 }
-/* comence adarle estilos a inicio */
+comence adarle estilos a inicio
 header{
     width: 100%;
     display: flex;
@@ -196,7 +195,7 @@ header{
 }
 .navbar li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
@@ -204,11 +203,11 @@ header{
     color: red;
 }
 a{
-    color: black;
+    color: white;
 }
 li{
    list-style: none;
-}
+} 
 /* .grid{
     display:grid;
     width: 100%;
@@ -223,8 +222,8 @@ grid-template-areas:
         "parrafo parrafo parrafo imagen2 imagen2 imagen2"
         "parrafo parrafo parrafo imagen2 imagen2 imagen2"
  ;
-} */
-.titulo {
+ }  */
+/* .titulo {
   grid-area: titulo;
   color:black;
 }
@@ -242,4 +241,6 @@ color:black;
 font-size: 30px;
 font-family: 'Roboto', sans-serif;
 
-}
+ } */
+
+
